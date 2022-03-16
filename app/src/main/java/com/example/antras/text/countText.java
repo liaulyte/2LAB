@@ -18,4 +18,7 @@ public class countText {
         }
         return charCount;
     }
+    public static int getWordsAndSpace(String input){
+        return input.length();
+    }
 }
