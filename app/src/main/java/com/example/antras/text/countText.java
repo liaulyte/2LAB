@@ -25,9 +25,8 @@ public class countText {
         }
 
         String[] parts = countText.SplitString(input);
-        for (int i = 0; i < parts.length; i++)
-        {
-            charCount += parts[i].trim().length();
+        for (String part : parts) {
+            charCount += part.trim().length();
         }
         return charCount;
     }
