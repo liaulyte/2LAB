@@ -25,6 +25,8 @@ public class ExampleUnitTest {
         assertEquals(0,result);
         result= countText.getWordsCount("   ");
         assertEquals(0,result);
+        result= countText.getWordsCount("   pak");
+        assertEquals(1,result);
 
 
         result= countText.getCharsNoSpaceCount("");
@@ -33,10 +35,20 @@ public class ExampleUnitTest {
         assertEquals(24,result);
         result= countText.getCharsNoSpaceCount("Sveikata  ");
         assertEquals(8,result);
+        result= countText.getCharsNoSpaceCount(" Sveikata puiki  ");
+        assertEquals(13,result);
         result= countText.getCharsNoSpaceCount("!? ");
         assertEquals(2,result);
         result= countText.getCharsNoSpaceCount("   ");
         assertEquals(0,result);
+        result= countText.getCharsNoSpaceCount("  !@# ");
+        assertEquals(3,result);
+        result= countText.getCharsNoSpaceCount(" 8/*+  ");
+        assertEquals(4,result);
+        result= countText.getCharsNoSpaceCount("");
+        assertEquals(0,result);
+
+
 
 }
 }
