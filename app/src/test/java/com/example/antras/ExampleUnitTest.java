@@ -26,6 +26,7 @@ public class ExampleUnitTest {
         result= countText.getWordsCount("   ");
         assertEquals(0,result);
 
+
         result= countText.getCharsNoSpaceCount("");
         assertEquals(0,result);
         result= countText.getCharsNoSpaceCount("Siandien yra ypatinga diena");
